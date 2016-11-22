@@ -4,25 +4,67 @@
 	<title>Maria Celeste Rivas Presentación</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet"  href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet"  href="css/estilos.css">
 </head>
 <body>
-	<<!Todo lo de la tarjeta, que nos permite centrarla >>
+	<!--Todo lo de la tarjeta, que nos permite centrarla -->
 	<div class="contenedor">
 		<section class="tarjeta">
-		<<!Donde iran la seccion de fotos de mi trabajo"Publicidad">>
+		<!--Donde iran la seccion de fotos de mi trabajo"Publicidad"-->
 			<section class="slider_banner">
 				<div class="banner">
-				<<!Alto= 300, Ancho=700 pixeles>>
-					<img src="" alt="">
-					
+				<!--Alto= 300, Ancho=700 pixeles-->
+					<img class="slide active" src="img/nino1.jpg" alt="">
+					<img class="slide" src="img/nino1.jpg" alt="">
+					<img class="slide" src="img/nino1.jpg" alt="">
+					<img class="slide" src="img/nino1.jpg" alt="">
 				</div>
+
+				<!--id pata js, class pata CSS-->
+				<a href="#" id="banner-prev"  class="flecha-banner anterior"> <span class=" fa fa-chevron-left"></span></a>
+				<a href="#" id="banner-next" class="flecha-banner siguiente"> <span class=" fa fa-chevron-right"></span></a>
 				
 			</section>
 			<section class="info">
+
+				<a href="#" id="info-prev"  class="flecha-info anterior"> <span class=" fa fa-chevron-left"></span></a>
+				<a href="#" id="info-next" class="flecha-info siguiente"> <span class=" fa fa-chevron-right"></span></a>
+				
+				<section class="informacion" id="informacion">
+					<article id="info">
+						<div class="slide active">
+								<h1 class="nombre">Maria Celeste Rivas</h1>
+								<p class="ocupacion"> Estudiante de Computación</p>
+								<p class="pais"><img src="img/vene.png" alt=""> Venezuela</p>
+						</div>
+
+						<div class="slide">
+							<h2 class="subtitulo"> Subtitulo</h2>
+							<p class="texto">Aqui va texto</p>
+							
+						</div>
+
+						<div class="slide">
+							<h2 class="subtitulo"> Sub</h2>
+							<p class="texto">Aqui va otro texto</p>
+						</div>
+
+						
+					</article>
+
+					<div class="botones" id="botones"> </div>
+					
+				</section>
+
 				
 			</section>
 
 			<section class="redes">
+				<a href="https://www.facebook.com/MariaCelesteRivasRuiz" class="facebook"><span class="fa fa-facebook-official"></span> </a>
+				<a href="https://twitter.com/ischeleg" class="twitter"><span class="fa fa-twitter"></span></a>
+				<a href="https://github.com/mariacelesterr" class="github"><span class="fa  fa-github"></span> </a>
 				
 			</section>
 			

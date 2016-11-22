@@ -1,0 +1,37 @@
+*{
+/*para que todo quede sin valor*/
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+
+	background: url('../img/pattern (1).png');
+	background-size: cover; /* para que cubra el 100% del ancho*/ 
+	background-attachment: fixed; /* para que la imagen se quede pegada atras y lo unico que se mueva es el contenedor*/
+	font-family: 'Oswald', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.tarjeta{
+	width: 100%;
+	background: #fff;
+	margin: 40px 0;
+	border-radius: 5px;
+	overflow: hidden; /* para ocultar todo el contenido que esta afuera de la clase tarjeta*/
+	z-index: 1000;
+}
