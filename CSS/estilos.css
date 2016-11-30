@@ -35,3 +35,183 @@ a {
 	overflow: hidden; /* para ocultar todo el contenido que esta afuera de la clase tarjeta*/
 	z-index: 1000;
 }
+
+/* ---------------------------------------------------------- */
+/* -------Slider Banner --------------*/
+/* -----------------------------------------------------------*/
+
+.slider_banner{
+	overflow:  hidden; /* para ocultar las demas fotos de la pag*/
+	z-index: 1000;
+	position: relative;/* es para decirle a cada img que van a la derecha*/
+
+}
+
+.slider_banner .banner{
+	position: relative;
+	width: 100 %;
+}
+ 
+.slider_banner .banner img{
+	vertical-align: top; /*para que quite el espacio de las img*/
+	width: 100%; /* cada img tengan el 100 de ancho*/
+	position: absolute;/* para que cada imagen estes ubicadas en el mismo lugar*/
+	top: 0;
+	left: 100%; /* para que empuje la img de izq a derecha*/
+
+}
+
+.slider_banner .flecha-banner {
+	font-size: 35px; /*tamaño de flechas*/
+	line-height: 35px;
+	color: rgba(0,0,0,.2); /* color de flechas*/
+	position: absolute;
+	top:50%;
+	z-index: 1100;/* para que aparezcan las flechas enfrente*/
+}
+
+/*para cambiar el color cuando se pasa el mouse*/
+.slider_banner .flecha-banner:hover {
+	color: rgba(0,0,0,.5);
+}
+
+.slider_banner .flecha-banner.anterior {left: 20px;}
+.slider_banner .flecha-banner.siguiente {right: 20px;}
+
+/* --------------------------------------- */
+/* ----- Slider Info */
+/* --------------------------------------- */
+
+.slider_info {
+	text-align: center;
+	overflow: hidden;
+	padding: 20px 0;
+	z-index: 1000;
+	position: relative;
+}
+
+/* Seccion Informacion */
+
+.slider_info .informacion {
+	width: 100%;
+}
+
+.slider_info .informacion article {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider_info .informacion article .slide{
+	background: #fff;
+	width: 100%;
+	left: 100%;
+	padding: 20px 80px;
+	position: absolute;
+}
+/* Slider Flechas */
+
+.slider_info .flecha-info {
+	font-size: 35px;
+	line-height: 35px;
+	color: #e6e6e6;
+	position: absolute;
+	top:50%;
+	z-index: 1000;
+}
+
+.slider_info .flecha-info:hover {
+	color:#6ed279;
+}
+
+.slider_info .flecha-info.anterior {
+	left: 20px;
+}
+
+.slider_info .flecha-info.siguiente {
+	right: 20px;
+}
+
+
+/* Estilos para los Slide de Info */
+
+.slider_info .informacion .nombre {
+	color: #444444;
+	font-size: 38px;
+	line-height: 38px;
+	font-weight:600;
+	margin-bottom: 16px;
+}
+
+.slider_info .informacion .trabajo {
+	color: #55acee;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 16px;
+}
+
+.slider_info .informacion .pais {
+	color: #8d8d8d;
+	font-family: 14px;
+	line-height: 14px;
+}
+
+.slider_info .informacion .pais img {
+	position: relative;
+	top:2px;
+	margin-right: 10px;
+}
+
+.slider_info .informacion .texto {
+	color: #55acee;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.slider_info .informacion .subtitulo {
+	color: #444444;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+
+/* Botones Slider Info */
+
+.slider_info .informacion .botones {
+	width: 100%;
+}
+
+.slider_info .informacion .botones span {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 10px;
+	border-radius: 50%;
+	background:#e6e6e6;
+}
+
+.slider_info .informacion .botones .active {
+	background: #6ed279;
+}
+
+/* ----- ----- Redes Sociales ----- ----- */
+.redes {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.redes a {
+	display: inline-block;
+	font-style:20px;
+	width: 50px;
+	height: 50px;
+	font-line:20px;
+	padding: 14px 0;
+	border-radius: 50%;
+	color: #fff;
+	margin: 0 10px;
+}
+
+.redes .github { background: #1769ff; }
+.redes .facebook { background: #3b5998; }
+.redes .twitter { background: #55acee; }
